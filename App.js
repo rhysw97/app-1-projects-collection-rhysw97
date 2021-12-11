@@ -1,12 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { Text, View, StyleSheet, Button } from 'react-native';
+import  Sound  from './Sound';
+import { samples } from './Samples';
+import Circle  from './Circle';
+import Ripple from './Ripple'
 
 export default function App() {
+  
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>{samples[0]}</Text>
+      <Circle clr="#ffff77"></Circle>
+      <Sound></Sound>
+      <Ripple></Ripple>
     </View>
   );
 }
