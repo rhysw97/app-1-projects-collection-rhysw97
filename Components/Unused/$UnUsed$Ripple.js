@@ -3,21 +3,20 @@ import { Animated, Text, View, StyleSheet, Button, SafeAreaView} from "react-nat
 
 export default function Ripple() {
     const ripple= useRef(new Animated.Value(30)).current;
-    const makeRipple = () => {
-        Animatted.timing(ripple, {
+    const makeRipple = () => {  
+        Animated.timing(ripple, {
             toValue: 800,
             duration: 5000
         }).start();
     };
-
+    
     return (
         <View style={styles.container}>
             <Animated.View style={{
                 width: ripple,
                 height: ripple
-            }}
-            oPress={makeRipple}>
-                <View style={styles.circle}></View>
+            }}>
+                <View style={styles.circle} oPress={makeRipple}></View>
             </Animated.View>
         </View>
     )
@@ -26,14 +25,15 @@ export default function Ripple() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#f7f77f',
         alignItems: 'center',
         justifyContent: 'center'
     },
 
     circle: {
-        width: 30,
-        height: 30,
+
+        width: 100,
+        height: 100,
         borderRadius: 15,
         backgroundColor: "purple"
     }

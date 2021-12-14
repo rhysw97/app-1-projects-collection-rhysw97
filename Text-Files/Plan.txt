@@ -1,0 +1,10 @@
+So I have done the sound and got it to work well so now the things I need to done
+
+attach sound to Circle
+Circles animation once tapped
+
+make an array of circles that can be added to and removed from the screen
+
+modal popup to inform user about app
+
+modal settings to allow use to change number of circles that appear and their size
