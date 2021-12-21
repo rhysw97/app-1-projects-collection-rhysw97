@@ -1,10 +1,13 @@
-import React, {useState, useEffect} from 'react';
-import { TouchableOpacity, Text, View, StyleSheet, Button } from 'react-native';
+import React, {useEffect} from 'react';
+import { TouchableOpacity, View, StyleSheet} from 'react-native';
 import { Audio } from 'expo-av';
-import { cScale, cPentatonic, cPentatonicMap } from '../Samples';
 import { random } from 'lodash';
+import { Dimensions } from 'react-native';
 
-//function for  circle whjich can have colour and sample list;
+//allows me to get the windows dimensions so I can create responsive circles by multipling by 0.25 and using this to set the circles height and width
+const window = Dimensions.get('window').width * 0.25;
+
+//function for  circle which can have colour and sample list;
 export default function Circle(props) {
   //this creates a sound state variable for the program that we can use to set the sound when it needs to be played using the setSound function
   const [sound, setSound] = React.useState();
@@ -36,9 +39,9 @@ export default function Circle(props) {
   //returns what the component will render to the screen
   // in this case we want a touchable opacity that displays as a circle of the colour passed in as prop which when pressed calls the play sound function
   return (
-  <View style={{width: "50%", height: props.height }}>
-    <View style={styles.circle}>
-      <TouchableOpacity style={{width: 100, height: 100, borderRadius: 200, backgroundColor: props.colour}} onPress={playSound}>
+  <View style={{width: "50%", height: props.height, marginTop: "5%" }}>
+    <View style={styles.circleContainer}>
+      <TouchableOpacity style={{width: window, height: window, borderRadius: 200, backgroundColor: props.colour}} onPress={playSound}>
       </TouchableOpacity>
     </View>
   </View>
@@ -48,7 +51,7 @@ export default function Circle(props) {
 
 const styles = StyleSheet.create({
  
-  circle: {
+  circleContainer: {
     width: '100%',
     height: '100%',
     backgroundColor: '#000',

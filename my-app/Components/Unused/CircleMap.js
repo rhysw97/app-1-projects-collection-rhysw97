@@ -1,4 +1,5 @@
 
+//was going to use a map to store samples in app but decided 2D array was much easier to allow to create circles with samples 
 const circles = {
   c1: [], 
   d1: [], 

@@ -1,5 +1,7 @@
 
-//was trying to get names from file system automatically using expo-file-system but only seem to be ab le to read files
+//was trying to get names from file system automatically using expo-file-system but only seem to be able to read files and not get the file names (or atleast from the documentation I 
+//couldn't figure out how that was done so I opted to hard code them by using node js and then printing out all the names of the samples to the console and then copying and pasting 
+//them into 2D arrays)
 import * as FileSystem from 'expo-file-system';
 
 const cScale = FileSystem.cacheDirectory +  'c-scale';

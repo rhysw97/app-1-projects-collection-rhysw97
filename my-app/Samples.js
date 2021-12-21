@@ -44,6 +44,7 @@ export const cScale = [
   ]
 ];
 
+//samples for the c pentatonic scale
 export const cPentatonic = [
   [
     require('./c-pentatonic/C1/C1_Loud.wav'), require('./c-pentatonic/C1/C1_Loud_G2.wav'), require('./c-pentatonic/C1/C1_Low.wav'), 
