@@ -127,7 +127,7 @@ export default function App() {
           <Text style={{textAlign: "center", margin: "5%"}}>This App Was Created by Rhys White</Text>
           <Text style={{margin: "5%", fontSize: 25}}>
             To use this app tap the circle to play a sample. If you tap the info button then this information screen will popup.
-            Also if you press the menu icon you can change the scale between c major and cmajor pentatonic and whether the circles 
+            Also if you press the menu icon you can change the scale between C Major and C Major Pentatonic and whether the circles 
             will play random notes or the same note
           </Text>
 

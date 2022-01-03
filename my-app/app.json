@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Piano Circles",
-    "slug": "my-app",
+    "slug": "piano-circles",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -30,6 +30,8 @@
     },
     "plugins": [
       "sentry-expo"
-    ]
+    ],
+    "description": "",
+    "githubUrl": "https://github.com/rhysw97/app-1-projects-collection-rhysw97"
   }
 }
